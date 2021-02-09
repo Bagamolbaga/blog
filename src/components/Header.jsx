@@ -4,6 +4,6 @@ import './styleComponents/Header.sass'
 export default function Header(){
     
     return(
-        <div className="red">Header</div>
+        <div className="red">Headersdfsdfsdfs</div>
     )
 }
