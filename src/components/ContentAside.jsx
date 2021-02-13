@@ -5,24 +5,18 @@ import {Context} from "./context.js"
 export default function ContentAside() {
   let {posts} = useContext(Context);
 
-  let [populatPost, setPopularPost] = useState();
-
   let GetPopularPost = (posts) => {
     let returnPost;
     let views = 0;
-    posts.forEach(post => {
-      if (post.views > views) {
+    posts.forEach((post, index) => {
+      if (views < post.views) {
         views = post.views
         returnPost = post
       }
     });
-    views = 0;
     return returnPost;
   }
-  //useEffect(() => {
-    let popPost = GetPopularPost(posts);
-    console.log(popPost)
-  //});
+    let popularPost = GetPopularPost(posts);
   
     return(
         <aside className="content__aside">
@@ -31,18 +25,18 @@ export default function ContentAside() {
 
                 <div className="popular__article">
                   <div className="popular__arcticle-image">
-                    <a href={`/post/$`}>
+                    <a href={`/post/${popularPost.id}`}>
                       <img src="" alt="" />
                     </a>
                   </div>
                   <div className="popular__arcticle-text aside-text">
                     <div className="aside-text__subtitle">
-                      <a href={`/post/$`}></a>
+                      <a href={`/post/${popularPost.id}`}>{popularPost.tittle}</a>
                     </div>
                     <div className="aside-text__title">
-                      <a href={`/post/$`}></a>
+                      <a href={`/post/${popularPost.id}`}>{popularPost.text}</a>
                     </div>
-                    <div className="aside-text__views"></div>
+                    <div className="aside-text__views">{popularPost.views}</div>
                   </div>
                 </div>
               </div>

@@ -13,12 +13,12 @@ function App() {
       {
         id: 1,
         img: 'fsfsf',
-        tittle: 'Text tittle',
-        text: 'Post text',
+        tittle: 'Text first tittle',
+        text: 'Post first text',
         category: 'Photography',
         author: 'Baga Lolka',
         dateCreate: '21:49 17.11.20',
-        views: '189'
+        views: 189
       },
       {
         id: 2,
@@ -28,7 +28,7 @@ function App() {
         category: 'Art',
         author: 'Lolka',
         dateCreate: '15:17 20.12.20',
-        views: '98'
+        views: 98
       },
       {
         id: 3,
@@ -38,7 +38,7 @@ function App() {
         category: 'Fasion',
         author: 'Baga',
         dateCreate: '10:31 15.10.20',
-        views: '490'
+        views: 90
       }
 
     ])
