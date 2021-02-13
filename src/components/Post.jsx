@@ -24,8 +24,10 @@ export default function Post(props) {
         <div className="info__category">
           <a href={`/category/${props.postData.category}`}>{props.postData.category}</a>
         </div>
-        <div className="info__time">{props.postData.dateCreate}</div>
-        <div className="info__views">{props.postData.views}</div>
+        <div className="info__time"><i class="far fa-calendar-alt"></i>{" " + props.postData.dateCreate}</div>
+        <div className="info__like"> <i class="far fa-heart"></i>{" " + props.postData.likes}</div>
+        <div className="info__views"><i className="far fa-eye"></i>{" " + props.postData.views}</div>
+        
       </div>
     </div>
   );

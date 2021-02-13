@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react"
+import React from "react"
 import { useContext } from "react"
 import {Context} from "./context.js"
 
@@ -36,7 +36,7 @@ export default function ContentAside() {
                     <div className="aside-text__title">
                       <a href={`/post/${popularPost.id}`}>{popularPost.text}</a>
                     </div>
-                    <div className="aside-text__views">{popularPost.views}</div>
+                    <div className="aside-text__views"><i className="far fa-eye"></i>{" " + popularPost.views}</div>
                   </div>
                 </div>
               </div>

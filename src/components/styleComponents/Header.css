@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -63,13 +63,15 @@ ul {
   display: flex;
 }
 
-.header__control-item img {
+.header__control-item i {
   margin-left: 9px;
+  color: #a78943;
+  font-size: 14px;
 }
 
-.header__control-text:hover + img {
-  -webkit-animation: img 0.7s ease-out;
-          animation: img 0.7s ease-out;
+.header__control-text:hover + i {
+  -webkit-animation: i 0.7s ease-out;
+          animation: i 0.7s ease-out;
 }
 
 .header__control-item:not(:last-child) {
@@ -101,8 +103,15 @@ ul {
   display: flex;
 }
 
-.header__icons-icon img {
+.header__icons-icon i {
   max-width: 100%;
+  color: #a78943;
+  font-size: 18px;
+}
+
+.header__icons-icon:hover {
+  -webkit-animation: i 0.7s ease-out;
+          animation: i 0.7s ease-out;
 }
 
 .header__icons-icon:not(:first-child) {
@@ -302,7 +311,7 @@ ul {
   }
 }
 
-@-webkit-keyframes img {
+@-webkit-keyframes i {
   0% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
@@ -317,7 +326,7 @@ ul {
   }
 }
 
-@keyframes img {
+@keyframes i {
   0% {
     -webkit-transform: translateY(0);
             transform: translateY(0);

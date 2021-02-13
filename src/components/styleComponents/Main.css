@@ -120,6 +120,26 @@
     border-right: 1px dashed #a78943;
     color: #a78943;
   }
+
+  .info__like {
+    padding-right: 10px;
+    border-right: 1px dashed #a78943;
+    color: #a78943;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+
+  .info__views {
+    padding-right: 10px;
+    border-right: 1px dashed #a78943;
+    color: #a78943;
+    position: relative;
+  }
+
+  .fa-heart:hover, .info__like:hover {
+    color: #d1ac54;
+    font-size: 20px;
+  }
   
   .popular__article {
     display: -webkit-box;
@@ -157,23 +177,11 @@
   
   .aside-text__views {
     font-size: 12px;
-    padding-left: 20px;
+    color: #a78943;
     position: relative;
   }
   
-  .aside-text__views::before {
-    content: "";
-    width: 13px;
-    height: 100%;
-    display: block;
-    position: absolute;
-    left: 7px;
-    top: 9px;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    background: url("../img/eye_icon.png") 0 0 no-repeat;
-  }
+  
   
   .tweet__account {
     margin: 0 0 27px 0;

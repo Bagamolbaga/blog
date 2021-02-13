@@ -1,10 +1,11 @@
-
 import React, {useState} from 'react'
 import { Context } from './components/context.js';
+
 import Header from './components/Header.jsx';
 import HeaderNavMenu from './components/HeaderNavMenu.jsx'
 import Main from './components/Main.jsx'
 import Footer from './components/Footer.jsx'
+
 import './App.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         category: 'Photography',
         author: 'Baga Lolka',
         dateCreate: '21:49 17.11.20',
+        likes: 10,
         views: 189
       },
       {
@@ -28,6 +30,7 @@ function App() {
         category: 'Art',
         author: 'Lolka',
         dateCreate: '15:17 20.12.20',
+        likes: 21,
         views: 98
       },
       {
@@ -38,6 +41,7 @@ function App() {
         category: 'Fasion',
         author: 'Baga',
         dateCreate: '10:31 15.10.20',
+        likes: 17,
         views: 90
       }
 
