@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import './styleComponents/Footer.css'
 
@@ -17,8 +18,8 @@ export default function Footer(){
 				</div>
 				<div className="footer__menu">
 					<ul className="footer__list">
-						<li className="footer__menu-item"><a href="index.php">Home</a></li>
-						<li className="footer__menu-item"><a href="about.php">About</a></li>
+						<li className="footer__menu-item"><a href="#">Home</a></li>
+						<li className="footer__menu-item"><a href="#">About</a></li>
 						<li className="footer__menu-item"><a href="#">Contact</a></li>
 					</ul>
 					<ul className="footer__list">
