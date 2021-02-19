@@ -9,7 +9,7 @@ export default function Post(props) {
       </div>
 
       <div className="article__title">
-        <a href={`/post/${props.postData.id}`}>{props.postData.tittle}</a>
+        <a href={"/post/" + props.postData.id}>{props.postData.tittle}</a>
       </div>
 
       <div className="article__info info">

@@ -1,0 +1,159 @@
+.text-container {
+  max-width: 769px;
+  margin: 0 auto;
+}
+
+.image-container {
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+.sign {
+  font-family: "Quattrocento", serif;
+  font-size: 22px;
+  padding: 15px 0 15px 40px;
+  border-left: 4px solid #a78943;
+}
+
+.intro {
+  background: #3b3b3b;
+  color: #fff;
+  padding: 40px 0 60px 0;
+}
+
+.intro__link-page {
+  text-align: center;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.intro__link-home {
+  text-align: center;
+}
+
+.intro__link-home a {
+  color: #fff;
+}
+
+.intro__link-home::after {
+  content: ">";
+  color: #a78943;
+}
+
+.intro__link-photography {
+  color: #a78943;
+}
+
+.intro__title {
+  margin: 35px 0 90px 0;
+  text-align: center;
+  font-size: 53px;
+  font-weight: bold;
+}
+
+.content {
+  position: relative;
+  top: -50px;
+}
+
+.content__image {
+  height: 425px;
+  background: #cecece;
+}
+
+.content__text {
+  margin-top: 35px;
+}
+
+.content__paragraph {
+  margin-bottom: 35px;
+}
+
+.images {
+  margin-bottom: 37px;
+}
+
+.images__double {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.images__double-item {
+  width: 475px;
+  height: 270px;
+  background: #cecece;
+}
+
+.images__big {
+  height: 570px;
+  background: #cecece;
+}
+
+.thoughts {
+  margin-bottom: 30px;
+}
+
+.thoughts__title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 26px;
+}
+
+.thoughts__list {
+  list-style: none;
+}
+
+.thoughts__item {
+  padding-left: 48px;
+  position: relative;
+}
+
+.thoughts__item:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.thoughts__item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #a78943;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 10px;
+}
+
+.tags__title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.tags__set {
+  margin-top: 15px;
+}
+
+.set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #a78943;
+}
+
+.set__item {
+  padding: 8px 11px;
+  border: 1px solid #cecece;
+}
+
+.set__item:not(:last-child) {
+  margin-right: 6px;
+}

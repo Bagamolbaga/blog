@@ -8,7 +8,7 @@ export default function ContentAside() {
   let GetPopularPost = (posts) => {
     let returnPost;
     let views = 0;
-    posts.forEach((post, index) => {
+    posts.forEach((post) => {
       if (views < post.views) {
         views = post.views
         returnPost = post
